@@ -1,0 +1,344 @@
+img {
+    width: 7%;
+    object-fit: contain;
+    margin-top: -15;
+}
+
+body{
+	background:url(x1.jpg);
+     border-radius: black 10px; 
+	background-repeat: repeat;
+	background-size: cover;
+
+
+	background-position: center;
+    background-attachment: fixed;
+
+
+}
+.div2{
+
+    border-image: fill 0 
+    linear-gradient(#0001, #000);
+
+
+}
+h1{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-top: 40;
+  margin-left: 120;
+  font: bold 16px georgia ;
+  text-shadow: 0 0 10px rgb(10, 10, 10);
+ 
+  font-size: 5px;
+ 
+}
+h2{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-top: 5;
+   font:  bold 16px georgia ;
+  text-shadow: 0 0 10px rgb(10, 10, 10),
+  0 0 10px rgb(0, 0, 0);
+  font-size: 15px;
+
+}
+H3{
+     font-weight: bold;
+  color: rgb(253, 253, 253);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-left: 500;
+ font:  bold 16px georgia ;
+   text-shadow: 0 0 10px rgb(8, 0, 100);
+  font-size: 60px;
+  margin-top: 30;
+
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: #ccc;
+    font-variant: inherit;
+    font-weight: bolder;
+}
+.container {
+    padding: 15px 0;
+    background-size: contain;
+    
+}
+.container{
+    
+    padding: 15px 0;
+}
+a{
+	text-decoration: none;
+    color: rgb(250, 247, 247);
+	text-transform:none;
+	transition: 0.25s ease;
+	font-style: bold;
+}
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+ul li {
+	text-decoration: none;
+	margin: 0 0.7em 0 0.75em;
+}
+
+ul:hover a:hover {
+	color: #00c3ff;
+	box-shadow: 0 2px 0 0 currentColor;
+
+}
+.container ul {
+    bottom: 10px;
+    list-style: none;
+    margin: 0;
+    padding: -10;
+    display: flex;
+    justify-content: right;
+}
+.container li {
+    margin: 0 40px;
+}
+.container a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5;
+    left: 0;
+    background-color: #eff4f0;
+    transition: width 0.9s ease;
+    
+}
+
+
+.div{
+    border-image: fill 0;
+   
+	text-align: left;
+	font-size: 20px;
+	font-family: Segoe UI black;
+}
+
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes moveStars{
+    from { background-position: 0 0; }
+    to { background-position: 10000px 5000px; }
+}
+
+/* 🌠 Shooting Star */
+
+
+@keyframes shooting{
+    0%{
+        transform: translateX(0) translateY(0) rotate(25deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(1500px) translateY(300px) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+/* 🌍 Layout */
+.about-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 🪐 Planet (CHANGE IMAGE HERE) */
+.planet{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: 2%;
+    border-radius: 50%;
+    background: url("p1.jpg") no-repeat center/cover;
+     /* <-- PUT YOUR PLANET IMAGE */
+    box-shadow:
+        0 0 40px rgba(76,201,240,0.6),
+        0 0 80px rgba(247,37,133,0.4);
+    animation: float 6s ease-in-out infinite;
+    transition: 0.5s ease;
+    margin-top: -300px;
+}
+
+/* Planet Ring */
+.planet::after{
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 90px;
+    border: 4px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    top: 115px;
+    left: -50px;
+    transform: rotate(20deg);
+    opacity: 0.7;
+}
+
+/* Planet Hover Glow */
+.planet:hover{
+    transform: scale(1.1);
+    box-shadow:
+        0 0 60px #4cc9f0,
+        0 0 120px #f72585,
+        0 0 200px rgba(76,201,240,0.7);
+}
+
+/* Floating Animation */
+@keyframes float{
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+/* 🪐 Second Planet */
+.planet2{
+    margin-top: 1000px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 3%;          /* ilalagay sa kabilang side */
+    bottom: -40%;
+    border-radius: 50%;
+    background: url("p2.jpg") no-repeat center/cover; /* 2nd image */
+    box-shadow:
+        0 0 30px rgba(255,170,0,0.6),
+        0 0 70px rgba(255,100,0,0.4);
+
+    animation: float2 8s ease-in-out infinite;
+    transition: 0.5s ease;
+}
+
+/* Different Floating Speed */
+@keyframes float2{
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(25px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Glow Hover */
+.planet2:hover{
+    transform: scale(1.1);
+    box-shadow:
+        0 0 60px orange,
+        0 0 120px red;
+}
+/* 💫 Glass Card */
+.about-card{
+    width: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 1;
+    transition: 0.4s ease;
+    margin-top: 600px;
+}
+
+
+/* ✨ Glowing Title */
+.about-card h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #4cc9f0, #f72585);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowText 2s infinite alternate;
+}
+
+
+.about-card p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+.title {
+    font-size: 100px;
+    font-weight: bold;
+}
+.social {
+    position: absolute;
+    top: 200%;
+    left: 52%;
+    text-align: center;
+    transform: translate(-60%, -50%);
+    list-style: none;
+
+}
+
+.social li {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin: 10px 0;
+    background-color:rgb(67, 66, 66);
+    border-radius: 500px;
+    color: #fff;
+    cursor: pointer;
+  
+    transition: 0.3s;
+}
+
+.social li:hover {
+   transform: scale(1.1); 
+  background-color: #8b908e;
+   left: 200;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+   
+    font-size: 24px;
+}
+
+.title {
+    font-size: 49px;
+    font-weight: bold;
+}
+.project-note {
+    position: fixed;
+    bottom: -30px; /* lifted higher from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(4, 4, 4, 0.413); /* dark transparent */
+    backdrop-filter: blur(5px); /* blur effect */
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    width: 280px;
+    
+    
+}

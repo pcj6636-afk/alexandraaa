@@ -1,0 +1,213 @@
+img {
+    width: 7%;
+    object-fit: contain;
+    margin-top: -15;
+}
+.button{
+            padding: 18px 22px;
+            background-color: #1cbbff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 670px; 
+            margin-top: -40;
+              font-size: 17px;
+            
+            
+            
+        }
+        H1{
+             font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-top: 40;
+  margin-left: -10;
+ text-align: center;
+ 
+ font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 0 0 10px rgb(94, 175, 255),
+  0 0 10px rgba(4, 17, 71, 0.76);
+  font-size: 90px;
+        }
+            H2{
+             font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-top: -20;
+  margin-left: -80;
+ text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 0 0 10px rgb(5, 5, 5);
+ 
+  font-size: 20px;
+            }
+        .button:hover {
+            background-color: #00d5ff;
+            transform: scale(1.1); 
+        }
+ .button2{
+             padding: 7px 20px;
+            background-color: #eff2ef;
+            color: rgb(18, 18, 18);
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: all 0.5s ease; 
+        }
+        
+        .button2:hover {
+            background-color: #199ced;
+            transform: scale(1.1); 
+            animation: forwards;
+        }
+
+body{
+	background:url(nz.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: #ccc;
+    font-variant: inherit;
+    font-weight: bolder;
+}
+.container {
+    padding: 15px 0;
+    background-size: contain;
+}
+.container{
+    background-color: blured;
+    padding: 15px 0;
+}
+a{
+	text-decoration: none;
+    color: rgb(250, 247, 247);
+	text-transform:none;
+	transition: 0.25s ease;
+	font-style: bold;
+}
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+ul li {
+	text-decoration: none;
+	margin: 0 0.7em 0 0.75em;
+}
+
+ul:hover a:hover {
+	color: #36b8f9;
+	box-shadow: 0 2px 0 0 currentColor;
+
+}
+.container ul {
+    bottom: 10px;
+    list-style: none;
+    margin: 0;
+    padding: -10;
+    display: flex;
+    justify-content: right;
+}
+.container li {
+    margin: 0 40px;
+}
+.container a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5;
+    left: 0;
+    background-color: #eff4f0;
+    transition: width 0.9s ease;
+    
+}
+
+
+.div{
+	text-align: left;
+	font-size: 20px;
+	font-family: Segoe UI black;
+
+}
+
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+}
+.social {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-60%, -50%);
+    list-style: none;
+
+}
+
+.social li {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin: 10px 0;
+    background-color:rgb(67, 66, 66);
+    border-radius: 500px;
+    color: #fff;
+    cursor: pointer;
+  
+    transition: 0.3s;
+}
+
+.social li:hover {
+   transform: scale(1.1); 
+  background-color: #8b908e;
+   left: 200;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+   
+    font-size: 24px;
+}
+
+.title {
+    font-size: 49px;
+    font-weight: bold;
+}
+
+.project-note {
+    position: fixed;
+    bottom: -30px; /* lifted higher from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(4, 4, 4, 0.413); /* dark transparent */
+    backdrop-filter: blur(5px); /* blur effect */
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    width: 280px;
+    
+    
+}

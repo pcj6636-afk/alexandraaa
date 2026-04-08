@@ -1,0 +1,324 @@
+img {
+    width: 7%;
+    object-fit: contain;
+    margin-top: -15;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background-image: url('alz.jpg'); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+       border-image: fill 100
+    linear-gradient(rgba(0, 0, 0, 0.067), #000000);
+}
+
+section {
+    height: 150; /* Full viewport height for each section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+       border-image: fill 100
+    linear-gradient(rgba(0, 0, 0, 0.067), #000000);
+
+}
+
+#section2 {
+    background-image: url('alex1.jpg'); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+        padding: 20%;
+}
+
+
+
+.div2{
+
+    border-image: fill 0 
+    linear-gradient(#0001, #000);
+
+
+}
+h1{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-top: 40;
+  margin-left: 120;
+  font: bold 16px georgia ;
+  text-shadow: 0 0 10px rgb(10, 10, 10);
+ 
+  font-size: 80px;
+ 
+}
+     
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns for horizontal rows */
+    gap: 50px;
+    padding: 20px;
+    justify-items: center; /* Centers items in their grid cells */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+figure {
+    width: 200px; /* Base width; adjust as needed */
+    min-width: 150px; /* Prevents too-small shrinking */
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+     margin-top: -400px;
+}
+
+figure img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Prevents distortion; change to 'contain' if preferred */
+}
+
+.img2 img {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Prevents distortion; change to 'contain' if preferred */
+}
+
+figure figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.4;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+figure:hover img {
+    filter: grayscale(0%);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+.img2:hover img {
+    filter: grayscale(0%);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+.img2:hover figcaption {
+    opacity: 1;
+}
+
+.img2:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+        gap: 15px;
+        padding: 10px;
+    }
+    figure {
+        width: 150px;
+        min-width: 120px;
+    }
+    .img2 img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+h2{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-top: 50;
+   margin-left: 100px;
+   font:  bold 16px georgia ;
+  text-shadow: 0 0 10px rgb(10, 10, 10),
+  0 0 10px rgb(0, 0, 0);
+  font-size: 15px;
+
+}
+H3{
+     font-weight: bold;
+  color: rgb(253, 253, 253);
+  background-color: NONE;
+  padding: 0px;
+  text-align: left;
+  margin-left: 500;
+ font:  bold 16px georgia ;
+   text-shadow: 0 0 10px rgb(8, 0, 100);
+  font-size: 60px;
+  margin-top: 30;
+
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: #ccc;
+    font-variant: inherit;
+    font-weight: bolder;
+}
+.container {
+    padding: 15px 0;
+    background-size: contain;
+    
+}
+.container{
+    
+    padding: 15px 0;
+}
+a{
+	text-decoration: none;
+    color: rgb(250, 247, 247);
+	text-transform:none;
+	transition: 0.25s ease;
+	font-style: bold;
+}
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+ul li {
+	text-decoration: none;
+	margin: 0 0.7em 0 0.75em;
+}
+
+ul:hover a:hover {
+	color: #00c3ff;
+	box-shadow: 0 2px 0 0 currentColor;
+
+}
+.container ul {
+    bottom: 10px;
+    list-style: none;
+    margin: 0;
+    padding: -10;
+    display: flex;
+    justify-content: right;
+}
+.container li {
+    margin: 0 40px;
+}
+.container a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5;
+    left: 0;
+    background-color: #eff4f0;
+    transition: width 0.9s ease;
+    
+}
+
+
+.div{
+    border-image: fill 0;
+   
+	text-align: left;
+	font-size: 20px;
+	font-family: Segoe UI black;
+}
+
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.social {
+    position: absolute;
+    top: 180%;
+    left: 52%;
+    text-align: center;
+    transform: translate(-60%, -50%);
+    list-style: none;
+
+}
+
+.social li {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin: 10px 0;
+    background-color:rgb(67, 66, 66);
+    border-radius: 500px;
+    color: #fff;
+    cursor: pointer;
+  
+    transition: 0.3s;
+}
+
+.social li:hover {
+   transform: scale(1.1); 
+  background-color: #8b908e;
+   left: 200;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+   
+    font-size: 24px;
+}
+
+.title {
+    font-size: 49px;
+    font-weight: bold;
+}
+.project-note {
+    position: fixed;
+    bottom: -30px; /* lifted higher from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(4, 4, 4, 0.413); /* dark transparent */
+    backdrop-filter: blur(5px); /* blur effect */
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    width: 280px;
+    
+    
+}
